@@ -144,11 +144,9 @@ export class Cell {
               return true;
             } else 
             if(((this.x + dx5 * i) + 2 >= 0 && (this.y + dy5 * i) - 2 >= 0 ) ? !this.board.getCell((this.x + dx5 * i) + 2, (this.y + dy5 * i) - 2)?.isEmpty() && this.board.getCell((this.x + dx5 * i) + 1, (this.y + dy5 * i) - 1)?.isEmpty() : false){
-              console.log('h11')
               return false;
             } else 
             if(!this.board.getCell((this.x + dx5 * i) + 1, (this.y + dy5 * i) - 1)?.isEmpty()){
-              console.log('h12')
               return false;
             }      
             
@@ -271,11 +269,9 @@ export class Cell {
               return true;
             } else 
             if(((this.x + dx5 * i) + 2 >= 0 && (this.y + dy5 * i) - 2 >= 0 ) ? !this.board.getCell((this.x + dx5 * i) + 2, (this.y + dy5 * i) - 2)?.isEmpty() && this.board.getCell((this.x + dx5 * i) + 1, (this.y + dy5 * i) - 1)?.isEmpty() : false){
-              console.log('h11')
               return false;
             } else 
             if(!this.board.getCell((this.x + dx5 * i) + 1, (this.y + dy5 * i) - 1)?.isEmpty()){
-              console.log('h12')
               return false;
             }      
             
@@ -323,7 +319,7 @@ export class Cell {
       this.figure.moveFigure(target);     
       target.setFigure(this.figure);
       this.figure = null;
-    }
+    } 
   }
  
 }

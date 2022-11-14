@@ -30,17 +30,13 @@ export default function Home() {
 
   function swapPlayer(ok: string) {
     if(ok === 'one'){
-      console.log('one')
       setCurrentPlayer(!currentFigure ? (currentPlayer?.color === Colors.WHITE ? blackPlayer : whitePlayer) : (currentFigure.color === Colors.WHITE ? blackPlayer : whitePlayer));
     }   else  
     if(ok === 'two'){
-      console.log('two')
       setCurrentPlayer(blackPlayer);
     }  else   
     if(ok === 'three'){
-      console.log('three')
       setCurrentPlayer(whitePlayer);
-      // setCurrentPlayer(currentPlayer?.color === Colors.BLACK ? blackPlayer : whitePlayer);
     }  else   
     if(ok === 'four'){
       setCurrentPlayer(null);

@@ -51,7 +51,9 @@ export class Board {
     }
   }
 
+
   getCell(x: number, y: number){
+    // console.log(x, y);
     return this.cells[y][x];
   }
 

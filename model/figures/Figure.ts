@@ -16,12 +16,14 @@ export class Figure {
   cell: Cell;
   name: FigureNames;
   id: number;
+  blocked: boolean;
 
   constructor(color: Colors, cell: Cell){
     this.color = color;
     this.cell = cell;
     this.cell.figure = this;
     this.image = null;
+    this.blocked = false;
     this.name = FigureNames.FIGURE;
     this.id = Math.random();
   }
